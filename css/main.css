@@ -1,0 +1,256 @@
+body {
+    overflow: hidden;
+    background: url('../images/Unbgnew-01-01.png') no-repeat center center fixed;
+    background-size: auto 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* background-color: #fff; */
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('Nexa-Font/Nexa\ Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url('Nexa-Font/NexaBlack.otf');
+}
+
+@font-face {
+    font-family: 'NexaThin';
+    src: url('Nexa-Font/NexaThin.otf');
+}
+
+.sidebar {
+    box-shadow: 15px 2px 3px 0px rgba(0, 0, 0, 0.5);
+    border-right: 6px solid rgb(187, 188, 189);
+    border-radius: 0px 40px 40px 0px;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: -260px;
+    background: white;
+    width: 240px;
+    height: 100%;
+    transition: .6s;
+}
+
+.active {
+    left: 0px;
+}
+
+.sidebar img {
+    width: 100px;
+    margin-top: 120px;
+    margin-left: 60px;
+}
+
+.sidebar ul {
+    /* z-index: 3; */
+    margin: 0px;
+    padding: 20px 0px;
+    left: 40px;
+    top: 230px;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    padding: 2px 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebarBtn {
+    position: fixed;
+    left: 30px;
+    top: 0px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.sidebarBtn .line1 {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 55px;
+    width: 26px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transition: .6s;
+}
+
+.sidebarBtn .line2 {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 61px;
+    width: 26px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transition: .6s;
+}
+
+.sidebarBtn .line3 {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 67px;
+    width: 26px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transition: .6s;
+}
+
+.sidebarBtn .line4 {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 73px;
+    width: 26px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transition: .6s;
+}
+
+.sidebarBtn.toggle .line1 {
+    background: transparent;
+    transform: rotate(45deg);
+    left: 140px;
+}
+
+.sidebarBtn.toggle .line4 {
+    background: transparent;
+    transform: rotate(-45deg);
+    left: 140px;
+}
+
+.sidebarBtn.toggle .line2 {
+    top: 61px;
+    left: 140px;
+    transform: rotate(45deg);
+}
+
+.sidebarBtn.toggle .line3 {
+    top: 61px;
+    left: 140px;
+    transform: rotate(-45deg);
+}
+
+#logo {
+    /* background: url('images/Logo Comtronics1.png'); */
+    position: absolute;
+    top: 25px;
+    width: 130px;
+    height: 110px;
+    left: 110px;
+}
+
+ul {
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+    left: 300px;
+}
+
+.nav-item a {
+    font-family: 'Nexa';
+    color: black;
+    font-size: 25px;
+}
+
+main .float-left .nav-link {
+    position: fixed;
+    font-family: 'Nexa';
+    color: black;
+    font-size: 20px;
+    top: 250px;
+    left: 0px;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    margin-left: 4rem;
+}
+
+.diamond {
+    /* overflow: hidden; */
+    width: 420px;
+    height: 410px;
+    background: white;
+    margin-top: 230px;
+    margin-left: 570px;
+    /* Rotate */
+    -webkit-transform: rotate(-49deg);
+    -moz-transform: rotate(-49deg);
+    -ms-transform: rotate(-49deg);
+    -o-transform: rotate(-49deg);
+    transform: rotate(-49deg);
+    /* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    transform: rotate(-49deg);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.18), inset 10px 10px 20px rgba(1, 1, 1, 0.15);
+}
+
+.diamond img {
+    position: relative;
+    width: 400px;
+    transform: rotate(49deg);
+}
+
+main .float-right .nav-link {
+    position: fixed;
+    font-family: 'Nexa';
+    color: black;
+    font-size: 20px;
+    top: 250px;
+    right: 50px;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    margin-left: 4rem;
+}
+
+.container-flude {
+    position: absolute;
+    top: 470px;
+    left: 50px;
+}
+
+.container-flude h2 {
+    font-family: 'NexaBold';
+    line-height: 110%;
+    font-size: 32px;
+}
+
+.container-flude p {
+    font-family: 'NexaThin';
+    font-size: 17px;
+    line-height: 110%;
+    font-weight: 600;
+}
+
+.footer h6 {
+    position: fixed;
+    padding-right: 120px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}
