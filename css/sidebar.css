@@ -1,0 +1,130 @@
+.sidebar {
+    box-shadow: 12px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    border-right: 6px solid rgb(187, 188, 189);
+    border-radius: 0px 40px 40px 0px;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: -260px;
+    background: white;
+    width: 240px;
+    height: 100%;
+    transition: 0.8s;
+}
+
+.active {
+    left: 0px;
+}
+
+.sidebar img {
+    width: 100px;
+    margin-top: 120px;
+    margin-left: 60px;
+}
+
+.sidebar ul {
+    /* z-index: 3; */
+    margin: 0px;
+    padding: 20px 0px;
+    left: 40px;
+    top: 230px;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    padding: 2px 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.sidebarBtn {
+    position: fixed;
+    left: 35px;
+    top: 0px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.sidebarBtn .line1 {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 55px;
+    width: 30px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.sidebarBtn .line2 {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 63px;
+    width: 30px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.sidebarBtn .line3 {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 71px;
+    width: 30px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.sidebarBtn .line4 {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 79px;
+    width: 30px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.sidebarBtn.toggle .line1 {
+    width: 20px;
+    top: 56px;
+    /* background: transparent; */
+    transform: rotate(-40deg);
+}
+
+.sidebarBtn.toggle .line4 {
+    /* background: transparent; */
+    width: 20px;
+    top: 66px;
+    transform: rotate(40deg);
+}
+
+.sidebarBtn.toggle .line2 {
+    /* background: transparent; */
+    left: 10px;
+    top: 60px;
+    /* transform: rotate(45deg); */
+}
+
+.sidebarBtn.toggle .line3 {
+    /* background: transparent; */
+    left: 10px;
+    top: 61px;
+    /* transform: rotate(-45deg); */
+}

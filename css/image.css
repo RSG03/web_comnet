@@ -1,0 +1,16 @@
+#logo {
+    position: absolute;
+    top: 25px;
+    width: 145px;
+    height: 125px;
+    left: 125px;
+}
+
+.text-center img {
+    /* border: 1px solid red; */
+    width: 730px;
+    height: 650px;
+    margin-top: 55px;
+    border-bottom: none;
+    transform: rotate(-1deg);
+}
